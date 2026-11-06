@@ -5,15 +5,20 @@ Official Homebrew tap for dimelords projects.
 ## Installation
 
 ```bash
-brew tap dimelords/tap
-brew install protoc-gen-utcp
+brew install dimelords/tap/huddle-mcp
+brew install dimelords/tap/protoc-gen-utcp
 ```
 
-## Available Formulae
+Tapping first (`brew tap dimelords/tap`) also works, and then the names can be
+used on their own.
 
-- **protoc-gen-utcp** - Protocol Buffer compiler plugin that generates UTCP definitions
+## What is here
 
-## More Information
+| | |
+| --- | --- |
+| **huddle-mcp** | The client for [huddle](https://github.com/dimelords/huddle): the hooks the Huddle pane runs in Claude Code, the channel bridge and image uploads. Shipped as a cask. |
+| **protoc-gen-utcp** | A Protocol Buffer compiler plugin that generates [UTCP](https://github.com/dimelords/protoc-gen-utcp) definitions. Shipped as a formula. |
 
-See individual project repositories for documentation:
-- [protoc-gen-utcp](https://github.com/dimelords/protoc-gen-utcp)
+The casks and formulae here are written by GoReleaser when each project
+releases, and the binaries they download come from that project's own release,
+so Homebrew needs no credentials. Edit them in the project, not here.
